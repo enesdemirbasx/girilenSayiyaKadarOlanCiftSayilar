@@ -22,11 +22,10 @@ public class Main {
         sayac= inp.nextInt();
         sayi=sayac;
         for (;sayi>0;sayi--){
-            if (sayi%3==0){
-                if (sayi%4==0){
+            if (sayi%3==0 && sayi%4==0){
                     toplam=(toplam+sayi);
                     x++;
-                }
+
             }
         }
         System.out.println("Sıfırdan "+sayac+" sayısına kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalaması: "+toplam/x);
@@ -34,4 +33,3 @@ public class Main {
 
 
     }
-}
