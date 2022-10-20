@@ -17,10 +17,10 @@ public class Main {
         //Java döngüler ile 0'dan girilen sayıya kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalamasını hesaplayan programı yazınız.
 
         Scanner inp=new Scanner(System.in);
-        int sayi,toplam=0,x=0,girilen;
+        int sayi,toplam=0,x=0,sayac;
         System.out.print("Bir Sayı Giriniz: ");
-        girilen= inp.nextInt();
-        sayi=girilen;
+        sayac= inp.nextInt();
+        sayi=sayac;
         for (;sayi>0;sayi--){
             if (sayi%3==0){
                 if (sayi%4==0){
@@ -29,7 +29,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("Sıfırdan "+girilen+" sayısına kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalaması: "+toplam/x);
+        System.out.println("Sıfırdan "+sayac+" sayısına kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalaması: "+toplam/x);
         }
 
 
